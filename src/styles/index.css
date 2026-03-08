@@ -1,0 +1,35 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+@import 'leaflet/dist/leaflet.css';
+
+/* Override Leaflet UI to match dark space theme */
+.leaflet-container {
+  background: #050510 !important;
+  font-family: inherit;
+}
+.leaflet-control-attribution {
+  background: rgba(10, 5, 30, 0.8) !important;
+  color: rgba(139, 92, 246, 0.6) !important;
+  font-size: 9px !important;
+}
+.leaflet-control-attribution a { color: rgba(103, 232, 249, 0.7) !important; }
+.leaflet-control-zoom a {
+  background: rgba(15, 5, 40, 0.9) !important;
+  border-color: rgba(139, 92, 246, 0.4) !important;
+  color: #a78bfa !important;
+}
+.leaflet-control-zoom a:hover {
+  background: rgba(88, 28, 235, 0.4) !important;
+}
+.leaflet-popup-content-wrapper {
+  background: rgba(10, 5, 35, 0.97) !important;
+  border: 1px solid rgba(139, 92, 246, 0.4) !important;
+  border-radius: 16px !important;
+  color: white !important;
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.3) !important;
+  backdrop-filter: blur(12px);
+}
+.leaflet-popup-tip { background: rgba(10, 5, 35, 0.97) !important; }
+.leaflet-popup-close-button { color: #a78bfa !important; font-size: 18px !important; top: 8px !important; right: 10px !important; }
+.leaflet-popup-close-button:hover { color: #67e8f9 !important; }
